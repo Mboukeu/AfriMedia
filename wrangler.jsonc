@@ -11,7 +11,7 @@
     {
       "binding": "DB",
       "database_name": "afrimedia-db",
-      "database_id": "REPLACE_WITH_YOUR_D1_DATABASE_ID",
+      "database_id": "be941346-c312-41ff-816b-6ad2fdb66465",
       "migrations_dir": "migrations"
     }
   ]

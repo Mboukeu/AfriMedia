@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AfriMedia — V2</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><b>🌍 AfriMedia</b><nav><a href="/">Accueil</a><a href="#services">Services</a><a href="#admin">Administration</a></nav><button onclick="openSignup()">Créer un compte</button></header>
+<main>
+<section class="hero"><div><span>AFRIMEDIA V2</span><h1>Le média qui crée des opportunités.</h1><p>Une plateforme pour publier du contenu, vendre des services et gérer automatiquement tes commissions.</p><button onclick="document.querySelector('#services').scrollIntoView()">Explorer les services</button></div><div class="hero-card"><strong>Modèle de revenus</strong><p>Commission plateforme</p><big id="rate">10%</big><small>sur chaque vente payée</small></div></section>
+<section><h2 id="services">Services</h2><div id="serviceList" class="cards"></div></section>
+<section id="admin" class="admin"><h2>Tableau de bord propriétaire</h2><div class="stats">
+<div><small>Utilisateurs</small><b id="users">—</b></div><div><small>Services actifs</small><b id="serviceCount">—</b></div><div><small>Ventes encaissées</small><b id="sales">0 FCFA</b></div><div><small>Tes commissions</small><b id="commissions">0 FCFA</b></div></div>
+<p class="note">Les ventes restent à zéro tant qu'aucun paiement réel n'est confirmé par un prestataire.</p></section>
+</main>
+<div id="modal" class="modal"><div class="box"><button class="x" onclick="closeModal()">×</button><h2>Créer un compte</h2><input id="name" placeholder="Nom"><input id="email" placeholder="E-mail"><select id="role"><option value="client">Client</option><option value="creator">Créateur</option></select><button onclick="signup()">Créer</button><p id="msg"></p></div></div>
+<footer>© 2026 AfriMedia — Prototype professionnel V2</footer>
+<script src="app.js"></script></body></html>

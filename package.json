@@ -1,13 +1,15 @@
 {
   "name": "afrimedia",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "private": true,
-  "description": "AfriMedia - plateforme média et services",
-  "main": "server.js",
-  "scripts": {"start": "node server.js", "dev": "node --watch server.js"},
-  "dependencies": {
-    "better-sqlite3": "^11.10.0",
-    "dotenv": "^16.5.0",
-    "express": "^5.1.0"
+  "description": "AfriMedia - plateforme média et services sur Cloudflare Workers + D1",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:migrate:local": "wrangler d1 migrations apply afrimedia-db --local",
+    "db:migrate:remote": "wrangler d1 migrations apply afrimedia-db --remote"
+  },
+  "devDependencies": {
+    "wrangler": "^4.36.0"
   }
 }
